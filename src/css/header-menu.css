@@ -1,0 +1,38 @@
+/* Target the container of header WordPress Menu */
+#menu-right-header-menu,
+#menu-left-header-menu,
+#menu-right-header-menu-1,
+#menu-left-header-menu-1 {
+    @apply text-xl flex flex-col lg:flex-row h-full gap-6 lg:gap-4 justify-between;
+}
+
+/* Add an Arrow to the Parent Pages */
+#left-header-menu .menu-item-has-children > a::after,
+#right-header-menu .menu-item-has-children > a::after {
+    content: '⌄';
+    @apply absolute right-0.5 -top-2.5 text-xl;
+}
+
+/* Hide submenus by default */
+#left-header-menu .sub-menu,
+#right-header-menu .sub-menu {
+    @apply text-xl flex flex-col lg:flex-row lg:absolute gap-2 pl-2  mt-1  lg:mt-0  lg:bg-white lg:shadow-md z-[1000] lg:w-[100vw] lg:left-0 lg:justify-between lg:py-6 lg:px-24;
+}
+
+/* Style for the menu items with submenus */
+#left-header-menu .menu-item-has-children > a,
+#right-header-menu .menu-item-has-children > a {
+    @apply relative pr-5;
+}
+
+/* The Container */
+.sub-menu-container {
+    @apply absolute overflow-hidden hidden left-0 w-[100vw] h-[80px] p-8;
+}
+
+/* When a parent is selected the childen are not selected */
+.current_page_item:not(.sub-menu-container) > a,
+/* When a child of the parent is selected the parent is also selected color */
+.current-page-parent:not(.sub-menu-container) > a {
+    @apply text-red-500;
+}

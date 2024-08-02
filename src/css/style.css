@@ -1,0 +1,20 @@
+/*
+Theme Name: Goldren Harvest CLS
+Author: Sancho®
+Author URI: https://sancho.com.mt
+Version: 0.0.1
+text-domain: golden-harvest-cls
+*/
+
+/* Any other imports of css goes above tailwind imports */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Import the custom css for the header menu */
+@import './header-menu.css';
+
+.is-hovered {
+    cursor: none !important;
+}
