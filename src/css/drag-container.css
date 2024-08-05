@@ -1,0 +1,48 @@
+/* Draggable area Css */
+
+/* hide the cursor */
+.is-hovered {
+    cursor: none !important;
+}
+
+/* Shake the animation when hovering */
+[data-bread]:not(.selected) img:hover {
+    transition: transform 0.3s ease-in-out;
+    animation: shake 0.3s ease-in-out;
+}
+
+/* Normal Image (not-active) */
+img {
+    transition: transform 0.3s ease-in-out;
+    transform: scale(1);
+}
+
+/* Selected Image (active) */
+.selected img {
+    transition: transform 0.3s ease-in-out;
+    transform: scale(1.5);
+}
+
+/* Shake Animation for hover */
+@keyframes shake {
+    0%,
+    100% {
+        transform: translateX(0);
+    }
+    10% {
+        transform: translateX(2px);
+    }
+    25% {
+        transform: translateX(-2px);
+    }
+
+    50% {
+        transform: translateX(2px);
+    }
+    75% {
+        transform: translateX(-2px);
+    }
+    90% {
+        transform: translateX(2px);
+    }
+}

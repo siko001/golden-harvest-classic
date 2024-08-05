@@ -91,6 +91,55 @@
     color: rgb(239 68 68 / var(--tw-text-opacity));
 }
 
+/* Draggable area Css */
+
+/* hide the cursor */
+.is-hovered {
+    cursor: none !important;
+}
+
+/* Shake the animation when hovering */
+[data-bread]:not(.selected) img:hover {
+    transition: transform 0.3s ease-in-out;
+    animation: shake 0.3s ease-in-out;
+}
+
+/* Normal Image (not-active) */
+img {
+    transition: transform 0.3s ease-in-out;
+    transform: scale(1);
+}
+
+/* Selected Image (active) */
+.selected img {
+    transition: transform 0.3s ease-in-out;
+    transform: scale(1.5);
+}
+
+/* Shake Animation for hover */
+@keyframes shake {
+    0%,
+    100% {
+        transform: translateX(0);
+    }
+    10% {
+        transform: translateX(2px);
+    }
+    25% {
+        transform: translateX(-2px);
+    }
+
+    50% {
+        transform: translateX(2px);
+    }
+    75% {
+        transform: translateX(-2px);
+    }
+    90% {
+        transform: translateX(2px);
+    }
+}
+
 /*
 Theme Name: Goldren Harvest CLS
 Author: Sancho®
@@ -618,8 +667,20 @@ video {
 .relative {
   position: relative;
 }
+.sticky {
+  position: sticky;
+}
 .-bottom-10 {
   bottom: -2.5rem;
+}
+.-left-60 {
+  left: -15rem;
+}
+.-right-52 {
+  right: -13rem;
+}
+.-top-32 {
+  top: -8rem;
 }
 .-top-\[30\%\] {
   top: -30%;
@@ -627,8 +688,11 @@ video {
 .-top-\[4\%\] {
   top: -4%;
 }
-.-top-\[40\%\] {
-  top: -40%;
+.-top-\[54\%\] {
+  top: -54%;
+}
+.bottom-32 {
+  bottom: 8rem;
 }
 .bottom-\[30\%\] {
   bottom: 30%;
@@ -639,14 +703,11 @@ video {
 .left-72 {
   left: 18rem;
 }
-.left-\[10\%\] {
-  left: 10%;
-}
 .left-\[15\%\] {
   left: 15%;
 }
-.left-\[28\%\] {
-  left: 28%;
+.left-\[26\%\] {
+  left: 26%;
 }
 .left-\[35\%\] {
   left: 35%;
@@ -663,9 +724,6 @@ video {
 .left-\[70\%\] {
   left: 70%;
 }
-.right-\[10\%\] {
-  right: 10%;
-}
 .right-\[15\%\] {
   right: 15%;
 }
@@ -675,6 +733,12 @@ video {
 .right-\[5\%\] {
   right: 5%;
 }
+.right-\[55\%\] {
+  right: 55%;
+}
+.top-0 {
+  top: 0px;
+}
 .top-\[10\%\] {
   top: 10%;
 }
@@ -683,6 +747,9 @@ video {
 }
 .top-\[35\%\] {
   top: 35%;
+}
+.top-\[38\%\] {
+  top: 38%;
 }
 .top-\[45\%\] {
   top: 45%;
@@ -738,14 +805,35 @@ video {
 .h-full {
   height: 100%;
 }
+.h-\[250vh\] {
+  height: 250vh;
+}
+.h-\[220vh\] {
+  height: 220vh;
+}
 .min-h-\[100vh\] {
   min-height: 100vh;
+}
+.min-h-\[200vh\] {
+  min-height: 200vh;
+}
+.min-h-\[1000px\] {
+  min-height: 1000px;
+}
+.min-h-\[2000px\] {
+  min-height: 2000px;
+}
+.min-h-\[1500px\] {
+  min-height: 1500px;
 }
 .w-20 {
   width: 5rem;
 }
 .w-40 {
   width: 10rem;
+}
+.w-52 {
+  width: 13rem;
 }
 .w-\[100vw\] {
   width: 100vw;
@@ -756,11 +844,11 @@ video {
 .w-\[200px\] {
   width: 200px;
 }
-.w-\[200vw\] {
-  width: 200vw;
-}
 .w-\[300px\] {
   width: 300px;
+}
+.w-\[400vw\] {
+  width: 400vw;
 }
 .w-full {
   width: 100%;
@@ -774,8 +862,8 @@ video {
 .flex-shrink {
   flex-shrink: 1;
 }
-.-translate-x-1\/4 {
-  --tw-translate-x: -25%;
+.-translate-x-\[40\%\] {
+  --tw-translate-x: -40%;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 .-translate-y-1\/4 {
@@ -815,6 +903,13 @@ video {
 .rounded-full {
   border-radius: 9999px;
 }
+.border {
+  border-width: 1px;
+}
+.border-red-500 {
+  --tw-border-opacity: 1;
+  border-color: rgb(239 68 68 / var(--tw-border-opacity));
+}
 .bg-\[\#354453\] {
   --tw-bg-opacity: 1;
   background-color: rgb(53 68 83 / var(--tw-bg-opacity));
@@ -827,9 +922,17 @@ video {
   --tw-bg-opacity: 1;
   background-color: rgb(0 0 0 / var(--tw-bg-opacity));
 }
-.bg-red-200 {
+.bg-blue-500 {
   --tw-bg-opacity: 1;
-  background-color: rgb(254 202 202 / var(--tw-bg-opacity));
+  background-color: rgb(59 130 246 / var(--tw-bg-opacity));
+}
+.bg-green-500 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(34 197 94 / var(--tw-bg-opacity));
+}
+.bg-red-500 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(239 68 68 / var(--tw-bg-opacity));
 }
 .object-contain {
   -o-object-fit: contain;
@@ -895,62 +998,41 @@ video {
 }
 
 /* Import the custom css for the header menu */
-
-.is-hovered {
-    cursor: none !important;
-}
-
-[data-bread]:not(.selected) img:hover {
-    transition: transform 0.3s ease-in-out;
-
-    animation: shake 0.3s ease-in-out;
-}
-
-img {
-    transition: transform 0.3s ease-in-out;
-    transform: scale(1);
-}
-
-.selected img {
-    transition: transform 0.3s ease-in-out;
-    transform: scale(1.5);
-}
-
-@keyframes shake {
-    0%,
-    100% {
-        transform: translateX(0);
-    }
-    10% {
-        transform: translateX(2px);
-    }
-    25% {
-        transform: translateX(-2px);
-    }
-
-    50% {
-        transform: translateX(2px);
-    }
-    75% {
-        transform: translateX(-2px);
-    }
-    90% {
-        transform: translateX(2px);
-    }
-}
-
 @media (min-width: 768px) {
+
+  .md\:grid {
+    display: grid;
+  }
 
   .md\:px-12 {
     padding-left: 3rem;
     padding-right: 3rem;
   }
 }
-
 @media (min-width: 1024px) {
+
+  .lg\:-top-\[40\%\] {
+    top: -40%;
+  }
+
+  .lg\:left-\[28\%\] {
+    left: 28%;
+  }
+
+  .lg\:right-\[10\%\] {
+    right: 10%;
+  }
+
+  .lg\:right-\[45\%\] {
+    right: 45%;
+  }
 
   .lg\:top-4 {
     top: 1rem;
+  }
+
+  .lg\:top-\[45\%\] {
+    top: 45%;
   }
 
   .lg\:block {
@@ -965,11 +1047,23 @@ img {
     height: 5rem;
   }
 
+  .lg\:h-\[200vh\] {
+    height: 200vh;
+  }
+
   .lg\:w-60 {
     width: 15rem;
   }
-}
 
+  .lg\:w-\[200vw\] {
+    width: 200vw;
+  }
+
+  .lg\:-translate-x-1\/4 {
+    --tw-translate-x: -25%;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  }
+}
 @media (min-width: 1280px) {
 
   .xl\:px-16 {

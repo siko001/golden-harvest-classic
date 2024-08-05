@@ -16,11 +16,31 @@
 </head>
 
 <body <?php body_class() ?>>
-    <?php // get_template_part("template-parts/m.nav") 
-    ?>
-    <?php // get_template_part("template-parts/nav") 
-    ?>
+    <main class="relative">
 
-    <?php get_template_part('template-parts/hero') ?>
-    <?php get_template_part('template-parts/draggable-area') ?>
-    <?php get_template_part('template-parts/hero') ?>
+        <!-- Section 1 -->
+        <section class="snap-section">
+            <?php get_template_part("template-parts/m.nav")     ?>
+
+            <?php get_template_part("template-parts/nav")    ?>
+            <?php get_template_part('template-parts/hero', null, ["color" => "bg-green-500"]) ?>
+        </section>
+
+        <!-- Section 2 -->
+        <section class="snap-section sticky top-0 h-[100vh]">
+            <?php get_template_part('template-parts/draggable-area') ?>
+        </section>
+
+        <!-- Section 3 -->
+        <section class=" relative">
+            <?php get_template_part('template-parts/hero', null, ["color" => "bg-red-500"]) ?>
+        </section>
+
+        <!-- Section 4 (Scrollable) -->
+        <section class=" relative">
+            <?php get_template_part('template-parts/hero', null, ["color" => "bg-blue-500"]) ?>
+        </section>
+
+
+
+    </main>

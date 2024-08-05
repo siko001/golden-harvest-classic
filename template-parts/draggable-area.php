@@ -1,7 +1,7 @@
-<div id="bounding-cont" class="relative h-[100vh] w-[100vw] bg-[#C39957] overflow-hidden">
-    <div id='draggable-cont' class="absolute h-[200vh] w-[200vw] bg-[#C39957] -translate-x-1/4 -translate-y-1/4">
+<div id="bounding-cont" class="sticky top-0 h-[100vh] w-[100vw] bg-[#C39957] overflow-hidden ">
+    <div id='draggable-cont' class="absolute  min-h-[1500px] h-[220vh] lg:h-[200vh] w-[400vw] lg:w-[200vw] bg-[#C39957] -translate-x-[40%] lg:-translate-x-1/4 -translate-y-1/4">
 
-        <!-- Centered  -->
+        <!-- Centered  B1 -->
         <div data-bread class="relative  left-[45%] top-[35%] selected">
             <div class=" w-[300px] h-[450px]">
                 <img class="w-full h-full object-cover " src="<?= get_theme_file_uri() . "/assets/images/jumbo.png" ?>" alt="">
@@ -15,28 +15,68 @@
                 </p>
                 <p class="text-xs uppercase font-[500]">See more</p>
             </div>
-
-        </div>
-
-        <!-- further Left side  -->
-        <div class="absolute  left-[10%] top-[10%] -red-500 w-[200px] h-[300px]">
-            <img class="w-full h-full object-cover" src="<?= get_theme_file_uri() . "/assets/images/pink.png" ?>" alt="">
-        </div>
-
-
-        <div class="absolute  left-[15%] top-[45%] -red-500 w-[200px] h-[300px]">
-            <img class="w-full h-full object-cover" src="<?= get_theme_file_uri() . "/assets/images/green.png" ?>" alt="">
-        </div>
-
-        <div class="absolute  left-[5%] top-[75%] -red-500 w-[200px] h-[300px]">
-            <img class="w-full h-full object-cover" src="<?= get_theme_file_uri() . "/assets/images/jumbo.png" ?>" alt="">
         </div>
 
 
 
+        <!-- further Left side  B2 -->
+        <div data-bread class="absolute  left-[5%] top-[10%]">
+            <div class=" -red-500 w-[200px] h-[300px]">
+                <img class="w-full h-full object-cover" src="<?= get_theme_file_uri() . "/assets/images/pink.png" ?>" alt="">
+            </div>
+            <div class="text-container hidden  flex-col gap-2 relative bottom-32  -right-52   w-52 text-[#354453] font-script">
+                <div>
+                    <h2 class="font-fertigo">Jumbo Sliced White Loaf</h2>
+                </div>
+                <p class="text-sm">
+                    Perfect for everything from classic sandwiches to gourmet toast. Crafted with the finest ingredients and baked to perfection, it's no wonder this loaf is a top choice among our customers.
+                </p>
+                <p class="text-xs uppercase font-[500]">See more</p>
+            </div>
+        </div>
 
-        <!-- Left Center side  -->
-        <div data-bread class="relative  left-[28%] -top-[4%] ">
+
+
+
+
+        <!-- B3 -->
+        <div data-bread class="absolute  left-[15%] top-[45%]  ">
+            <div class="w-[200px] h-[300px]">
+                <img class="w-full h-full object-cover" src="<?= get_theme_file_uri() . "/assets/images/green.png" ?>" alt="">
+            </div>
+            <div class="text-container hidden  flex-col gap-2 relative bottom-32  -right-52   w-52 text-[#354453] font-script">
+                <div>
+                    <h2 class="font-fertigo">Jumbo Sliced White Loaf</h2>
+                </div>
+                <p class="text-sm">
+                    Perfect for everything from classic sandwiches to gourmet toast. Crafted with the finest ingredients and baked to perfection, it's no wonder this loaf is a top choice among our customers.
+                </p>
+                <p class="text-xs uppercase font-[500]">See more</p>
+            </div>
+        </div>
+
+
+        <!-- B4 -->
+        <div data-bread class="absolute  left-[5%] top-[75%]   ">
+            <div class="-red-500 w-[200px] h-[300px]">
+                <img class="w-full h-full object-cover" src="<?= get_theme_file_uri() . "/assets/images/jumbo.png" ?>" alt="">
+            </div>
+            <div class="text-container hidden  flex-col gap-2 relative bottom-32  -right-52   w-52 text-[#354453] font-script">
+                <div>
+                    <h2 class="font-fertigo">Jumbo Sliced White Loaf</h2>
+                </div>
+                <p class="text-sm">
+                    Perfect for everything from classic sandwiches to gourmet toast. Crafted with the finest ingredients and baked to perfection, it's no wonder this loaf is a top choice among our customers.
+                </p>
+                <p class="text-xs uppercase font-[500]">See more</p>
+            </div>
+        </div>
+
+
+
+
+        <!-- Left Center side  B5-->
+        <div data-bread class="relative left-[26%] lg:left-[28%] -top-[4%] ">
             <div class=" w-[200px] h-[350px]">
                 <img class="w-full h-full object-cover" src="<?= get_theme_file_uri() . "/assets/images/brown.png" ?>" alt="">
             </div>
@@ -54,49 +94,123 @@
 
 
 
-
-        <div class="relative  left-[35%] top-[15%]  w-[200px] h-[400px]">
-            <img class="w-full h-full object-cover" src="<?= get_theme_file_uri() . "/assets/images/red.png" ?>" alt="">
-
+        <div data-bread class="relative  left-[35%] top-[15%]  ">
+            <div class="r w-[200px] h-[400px]">
+                <img class="w-full h-full object-cover" src="<?= get_theme_file_uri() . "/assets/images/red.png" ?>" alt="">
+            </div>
+            <div class="text-container hidden flex-col gap-2 absolute -bottom-10 left-60 max-w-52 text-[#354453] font-script">
+                <div>
+                    <h2 class="font-fertigo">Jumbo Sliced White Loaf</h2>
+                </div>
+                <p class="text-sm">
+                    Perfect for everything from classic sandwiches to gourmet toast. Crafted with the finest ingredients and baked to perfection, it's no wonder this loaf is a top choice among our customers.
+                </p>
+                <p class="text-xs uppercase font-[500]">See more</p>
+            </div>
         </div>
-
 
 
 
         <!-- Left Top Center -->
-        <div class="absolute  right-[45%] top-[5%] -blue-500 w-[200px] h-[300px]">
-            <img class="w-full h-full object-cover" src="<?= get_theme_file_uri() . "/assets/images/red.png" ?>" alt="">
+        <div data-bread class="absolute  right-[55%] lg:right-[45%] top-[5%]    border border-red-500 ">
+            <div class=" - w-[200px] h-[300px]">
+                <img class="w-full h-full object-cover" src="<?= get_theme_file_uri() . "/assets/images/red.png" ?>" alt="">
+            </div>
+            <div class="text-container hidden flex-col gap-2 relative -top-32 left-60 max-w-52 text-[#354453] font-script">
+                <div>
+                    <h2 class="font-fertigo">Jumbo Sliced White Loaf</h2>
+                </div>
+                <p class="text-sm">
+                    Perfect for everything from classic sandwiches to gourmet toast. Crafted with the finest ingredients and baked to perfection, it's no wonder this loaf is a top choice among our customers.
+                </p>
+                <p class="text-xs uppercase font-[500]">See more</p>
+            </div>
         </div>
 
         <!-- right center side  -->
-        <div class="relative  left-[60%] -top-[40%]  w-[200px] h-[400px]">
-            <img class="w-full h-full object-cover" src="<?= get_theme_file_uri() . "/assets/images/green.png" ?>" alt="">
+        <div data-bread class="relative  left-[60%] -top-[54%] lg:-top-[40%] ">
+            <div class="  w-[200px] h-[400px]">
+                <img class="w-full h-full object-cover" src="<?= get_theme_file_uri() . "/assets/images/green.png" ?>" alt="">
+            </div>
+            <div class="text-container  hidden flex-col gap-2 absolute -bottom-10 left-60 max-w-52 text-[#354453] font-script">
+                <div>
+                    <h2 class="font-fertigo">Jumbo Sliced White Loaf</h2>
+                </div>
+                <p class="text-sm">
+                    Perfect for everything from classic sandwiches to gourmet toast. Crafted with the finest ingredients and baked to perfection, it's no wonder this loaf is a top choice among our customers.
+                </p>
+                <p class="text-xs uppercase font-[500]">See more</p>
+            </div>
         </div>
 
-
-
-        <div class="relative   left-[70%] -top-[30%]  w-[200px] h-[400px]">
-            <img class="w-full h-full object-cover" src="<?= get_theme_file_uri() . "/assets/images/pink.png" ?>" alt="">
+        <div data-bread class="relative   left-[70%] -top-[30%] ">
+            <div class=" w-[200px] h-[400px]">
+                <img class="w-full h-full object-cover" src="<?= get_theme_file_uri() . "/assets/images/pink.png" ?>" alt="">
+            </div>
+            <div class="text-container hidden flex-col gap-2 absolute -bottom-10 left-60 max-w-52 text-[#354453] font-script">
+                <div>
+                    <h2 class="font-fertigo">Jumbo Sliced White Loaf</h2>
+                </div>
+                <p class="text-sm">
+                    Perfect for everything from classic sandwiches to gourmet toast. Crafted with the finest ingredients and baked to perfection, it's no wonder this loaf is a top choice among our customers.
+                </p>
+                <p class="text-xs uppercase font-[500]">See more</p>
+            </div>
         </div>
-
 
 
 
         <!-- further right side  -->
-        <div class="absolute  right-[10%] top-[10%] -red-500 w-[200px] h-[300px]">
-            <img class="w-full h-full object-cover" src="<?= get_theme_file_uri() . "/assets/images/red.png" ?>" alt="">
+        <div data-bread class="absolute  right-[15%] lg:right-[10%] top-[10%]">
+            <div class=" w-[200px] h-[300px]">
+                <img class="w-full h-full object-cover" src="<?= get_theme_file_uri() . "/assets/images/red.png" ?>" alt="">
+            </div>
+            <div class="text-container hidden flex-col gap-2 relative -top-32 left-60 max-w-52 text-[#354453] font-script">
+                <div>
+                    <h2 class="font-fertigo">Jumbo Sliced White Loaf</h2>
+                </div>
+                <p class="text-sm">
+                    Perfect for everything from classic sandwiches to gourmet toast. Crafted with the finest ingredients and baked to perfection, it's no wonder this loaf is a top choice among our customers.
+                </p>
+                <p class="text-xs uppercase font-[500]">See more</p>
+            </div>
         </div>
 
-        <div class="absolute  right-[15%] top-[45%] -red-500 w-[200px] h-[300px]">
-            <img class="w-full h-full object-cover" src="<?= get_theme_file_uri() . "/assets/images/brown.png" ?>" alt="">
+
+        <div data-bread class="absolute  right-[15%] top-[38%] lg:top-[45%] ">
+            <div class="w-[200px] h-[300px]">
+                <img class="w-full h-full object-cover" src="<?= get_theme_file_uri() . "/assets/images/brown.png" ?>" alt="">
+            </div>
+            <div class="text-container hidden flex-col gap-2 relative -top-32 left-60 max-w-52 text-[#354453] font-script">
+                <div>
+                    <h2 class="font-fertigo">Jumbo Sliced White Loaf</h2>
+                </div>
+                <p class="text-sm">
+                    Perfect for everything from classic sandwiches to gourmet toast. Crafted with the finest ingredients and baked to perfection, it's no wonder this loaf is a top choice among our customers.
+                </p>
+                <p class="text-xs uppercase font-[500]">See more</p>
+            </div>
         </div>
-        <div class="absolute  right-[5%] top-[75%] -red-500 w-[200px] h-[300px]">
-            <img class="w-full h-full object-cover" src="<?= get_theme_file_uri() . "/assets/images/jumbo.png" ?>" alt="">
-        </div>
 
 
+        <!-- 
+        <div data-bread class="absolute  right-[5%] top-[75%]">
+            <div class=" w-[200px] h-[300px]">
+                <img class="w-full h-full object-cover" src="<?= get_theme_file_uri() . "/assets/images/jumbo.png" ?>" alt="">
+            </div>
+            <div class="text-container hidden flex-col gap-2 relative -top-32 -left-60 max-w-52 text-[#354453] font-script">
+                <div>
+                    <h2 class="font-fertigo">Jumbo Sliced White Loaf</h2>
+                </div>
+                <p class="text-sm">
+                    Perfect for everything from classic sandwiches to gourmet toast. Crafted with the finest ingredients and baked to perfection, it's no wonder this loaf is a top choice among our customers.
+                </p>
+                <p class="text-xs uppercase font-[500]">See more</p>
+            </div>
+        </div> -->
 
-        <div id="mouse-cursor-follower" class="w-[110px] -z-10 h-[40px] py-0.5 px-5 bg-[#354453] flex-shrink rounded-[4px] absolute bottom-[30%] right-[45%] grid place-items-center">
+
+        <div id="mouse-cursor-follower" class="hidden md:grid w-[110px] -z-10 h-[40px] py-0.5 px-5 bg-[#354453] flex-shrink rounded-[4px] absolute bottom-[30%] right-[45%]  place-items-center">
             <div class="flex items-center gap-1.5">
                 <svg class="h-4" viewBox="0 0 5 11" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g id="Group 11">
