@@ -4,7 +4,7 @@ function enqueue_styles() {
 
     $styles = [
         ['handle' => 'css', 'src' => get_stylesheet_uri()],
-        ['handle' => 'adobe-fonts', 'src' => 'https://use.typekit.net/ril1kdi.css']
+        ['handle' => 'adobe-fonts', 'src' => 'https://use.typekit.net/mdd5exc.css']
     ];
 
     foreach ($styles as $style) {

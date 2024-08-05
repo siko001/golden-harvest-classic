@@ -2,7 +2,12 @@
 module.exports = {
     content: ['./page.php', './template-parts/*.php'],
     theme: {
-        extend: {},
+        extend: {
+            fontFamily: {
+                script: ['brandon-grotesque', 'sans-serif'],
+                fertigo: ['fertigo-pro', 'serif'],
+            },
+        },
     },
     plugins: [],
 };

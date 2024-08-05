@@ -2,35 +2,101 @@
     <div id='draggable-cont' class="absolute h-[200vh] w-[200vw] bg-[#C39957] -translate-x-1/4 -translate-y-1/4">
 
         <!-- Centered  -->
-        <div class="relative border left-[45%] top-[35%] border-red-500 w-[300px] h-[400px]">
+        <div data-bread class="relative  left-[45%] top-[35%] selected">
+            <div class=" w-[300px] h-[450px]">
+                <img class="w-full h-full object-cover " src="<?= get_theme_file_uri() . "/assets/images/jumbo.png" ?>" alt="">
+            </div>
+            <div class="text-container flex flex-col gap-2 absolute -bottom-10 left-72 max-w-52 text-[#354453] font-script">
+                <div>
+                    <h2 class="font-fertigo">Jumbo Sliced White Loaf</h2>
+                </div>
+                <p class="text-sm">
+                    Perfect for everything from classic sandwiches to gourmet toast. Crafted with the finest ingredients and baked to perfection, it's no wonder this loaf is a top choice among our customers.
+                </p>
+                <p class="text-xs uppercase font-[500]">See more</p>
+            </div>
+
         </div>
 
         <!-- further Left side  -->
-        <div class="absolute border left-[10%] top-[10%] border-red-500 w-[200px] h-[300px]"></div>
-        <div class="absolute border left-[15%] top-[45%] border-red-500 w-[200px] h-[300px]"></div>
-        <div class="absolute border left-[5%] top-[75%] border-red-500 w-[200px] h-[300px]"></div>
+        <div class="absolute  left-[10%] top-[10%] -red-500 w-[200px] h-[300px]">
+            <img class="w-full h-full object-cover" src="<?= get_theme_file_uri() . "/assets/images/pink.png" ?>" alt="">
+        </div>
+
+
+        <div class="absolute  left-[15%] top-[45%] -red-500 w-[200px] h-[300px]">
+            <img class="w-full h-full object-cover" src="<?= get_theme_file_uri() . "/assets/images/green.png" ?>" alt="">
+        </div>
+
+        <div class="absolute  left-[5%] top-[75%] -red-500 w-[200px] h-[300px]">
+            <img class="w-full h-full object-cover" src="<?= get_theme_file_uri() . "/assets/images/jumbo.png" ?>" alt="">
+        </div>
+
+
 
 
         <!-- Left Center side  -->
-        <div class="relative border left-[28%] top-[5%] border-red-500 w-[200px] h-[300px]"></div>
-        <div class="relative border left-[35%] top-[25%] border-red-500 w-[200px] h-[300px]"></div>
+        <div data-bread class="relative  left-[28%] -top-[4%] ">
+            <div class=" w-[200px] h-[350px]">
+                <img class="w-full h-full object-cover" src="<?= get_theme_file_uri() . "/assets/images/brown.png" ?>" alt="">
+            </div>
+            <div class="text-container hidden flex-col gap-2 absolute -bottom-10 left-60 max-w-52 text-[#354453] font-script">
+                <div>
+                    <h2 class="font-fertigo">Jumbo Sliced White Loaf</h2>
+                </div>
+                <p class="text-sm">
+                    Perfect for everything from classic sandwiches to gourmet toast. Crafted with the finest ingredients and baked to perfection, it's no wonder this loaf is a top choice among our customers.
+                </p>
+                <p class="text-xs uppercase font-[500]">See more</p>
+            </div>
+        </div>
+
+
+
+
+
+        <div class="relative  left-[35%] top-[15%]  w-[200px] h-[400px]">
+            <img class="w-full h-full object-cover" src="<?= get_theme_file_uri() . "/assets/images/red.png" ?>" alt="">
+
+        </div>
+
+
+
 
         <!-- Left Top Center -->
-        <div class="absolute border right-[45%] top-[5%] border-blue-500 w-[200px] h-[300px]"></div>
+        <div class="absolute  right-[45%] top-[5%] -blue-500 w-[200px] h-[300px]">
+            <img class="w-full h-full object-cover" src="<?= get_theme_file_uri() . "/assets/images/red.png" ?>" alt="">
+        </div>
 
         <!-- right center side  -->
-        <div class="relative border left-[60%] -top-[25%] border-red-500 w-[200px] h-[300px]"></div>
-        <div class="relative border left-[70%] -top-[10%] border-red-500 w-[200px] h-[300px]"></div>
+        <div class="relative  left-[60%] -top-[40%]  w-[200px] h-[400px]">
+            <img class="w-full h-full object-cover" src="<?= get_theme_file_uri() . "/assets/images/green.png" ?>" alt="">
+        </div>
+
+
+
+        <div class="relative   left-[70%] -top-[30%]  w-[200px] h-[400px]">
+            <img class="w-full h-full object-cover" src="<?= get_theme_file_uri() . "/assets/images/pink.png" ?>" alt="">
+        </div>
 
 
 
 
         <!-- further right side  -->
-        <div class="absolute border right-[10%] top-[10%] border-red-500 w-[200px] h-[300px]"></div>
-        <div class="absolute border right-[15%] top-[45%] border-red-500 w-[200px] h-[300px]"></div>
-        <div class="absolute border right-[5%] top-[75%] border-red-500 w-[200px] h-[300px]"></div>
+        <div class="absolute  right-[10%] top-[10%] -red-500 w-[200px] h-[300px]">
+            <img class="w-full h-full object-cover" src="<?= get_theme_file_uri() . "/assets/images/red.png" ?>" alt="">
+        </div>
 
-        <div id="mouse-cursor-follower" class="w-[110px] h-[40px] py-0.5 px-5 bg-[#354453] flex-shrink rounded-[4px] absolute bottom-[30%] right-[45%] grid place-items-center">
+        <div class="absolute  right-[15%] top-[45%] -red-500 w-[200px] h-[300px]">
+            <img class="w-full h-full object-cover" src="<?= get_theme_file_uri() . "/assets/images/brown.png" ?>" alt="">
+        </div>
+        <div class="absolute  right-[5%] top-[75%] -red-500 w-[200px] h-[300px]">
+            <img class="w-full h-full object-cover" src="<?= get_theme_file_uri() . "/assets/images/jumbo.png" ?>" alt="">
+        </div>
+
+
+
+        <div id="mouse-cursor-follower" class="w-[110px] -z-10 h-[40px] py-0.5 px-5 bg-[#354453] flex-shrink rounded-[4px] absolute bottom-[30%] right-[45%] grid place-items-center">
             <div class="flex items-center gap-1.5">
                 <svg class="h-4" viewBox="0 0 5 11" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g id="Group 11">
